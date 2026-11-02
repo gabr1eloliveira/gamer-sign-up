@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Orbitron;
+    src: url('../../assets/fonts/orbitron/orbitron-variable.ttf') format('truetype');
+}
+@font-face {
+    font-family: JetBrains Mono;
+    src: url('../../assets/fonts/jetbrains-mono/JetBrainsMono-Regular.woff2') format('woff2');
+}
+
+:root {
+    --normal: 'JetBrains Mono', monospace;
+    --titulo: 'Orbitron', sans-serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
