@@ -12,6 +12,8 @@
     --titulo: 'Orbitron', sans-serif;
     --cor-fundo: hsl(210 39% 7%);
     --cor-texto: hsl(211 18% 68%);
+    --cor-cotraste: hsl(77 90% 59%);
+    --cor-hover: hsl(77 67% 39%);
 }
 
 *{
