@@ -10,10 +10,13 @@
 :root {
     --normal: 'JetBrains Mono', monospace;
     --titulo: 'Orbitron', sans-serif;
-    --cor-fundo: hsl(210 39% 7%);
+    --cor-fundo: hsl(214 37% 4%);
+    --cor-fundo-contraste: hsl(211 30% 13%);
     --cor-texto: hsl(211 18% 68%);
-    --cor-cotraste: hsl(77 90% 59%);
+    --cor-contraste: hsl(77 90% 59%);
     --cor-hover: hsl(77 67% 39%);
+    --cor-borda: hsl(211 22% 24%);
+    --cor-borda-input: hsl(211 14% 50%);
 }
 
 *{

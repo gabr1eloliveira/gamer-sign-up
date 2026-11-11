@@ -35,34 +35,39 @@
                         <p class="new-operator__all-required">ALL REQUIRED</p>                    
                     </div>
                     <div class="linha-cadastro-conteudo"></div>
-                    <form action="" method="post">
-                        <label for="username">USERNAME</label>
+                    <form action="" method="post" class="formulario-cadastro">
+
+                        <label for="username"><span>></span> USERNAME</label>
                         <input type="text" name="username" id="cadastro-form__username" class="cadastro-form__input" required minlength="3" maxlength="20" placeholder="e.g. Vortex_07">
-                        <p cadastro-form__description>3-20 caracteres: letras, números, _ ou -</p>
-                        <label for="email">EMAIL</label>
+                        <p class="cadastro-form__description">3-20 caracteres: letras, números, _ ou -</p>
+
+                        <label for="email"><span>></span> EMAIL</label>
                         <input type="email" name="email" id="cadastro-form__email" class="cadastro-form__input" required maxlength="100" autocomplete="email" placeholder="you@example.com">
-                        <p cadastro-form__description>3-20 caracteres: letras, números, _ ou -</p>
-                        <label for="senha">SENHA</label>
+                        <p class="cadastro-form__description">3-20 caracteres: letras, números, _ ou -</p>
+
+                        <label for="senha"><span>></span> SENHA</label>
                         <div class="cadastro-form__campo-senha">                            
                             <input type="password" name="senha" id="cadastro-form__senha" class="cadastro-form__input" required minlength="8">
+                            <button class="btn-mostrar-senha">
+                                <img src="assets/images/icon-eye.svg" alt="Mostrar Senha">
+                            </button>
                             <div class="cadastro-form__forca-senha">
                                 <span class="forca-senha__nivel"></span>
                                 <span class="forca-senha__nivel"></span>
                                 <span class="forca-senha__nivel"></span>
                                 <span class="forca-senha__nivel"></span>
-                            </div>
-                            <button class="btn-mostrar-senha">
-                                <img src="assets/images/icon-eye.svg" alt="Mostrar Senha">
-                            </button>
+                            </div>                           
                         </div>
-                        <p cadastro-form__description>Pelo menos 8 caracterers</p>
-                        <label for="confirma-senha">CONFIRMAR SENHA</label>
+                        <p class="cadastro-form__description">Pelo menos 8 caracterers</p>
+
+                        <label for="confirma-senha"><span>></span> CONFIRMAR SENHA</label>
                         <div class="cadastro-form__campo-senha">                           
                             <input type="password" name="confirma-senha " id="cadastro-form__confirma-senha" class="cadastro-form__input" required>
                             <button class="btn-mostrar-senha">
                                 <img src="assets/images/icon-eye.svg" alt="Mostrar Senha">
                             </button>
                         </div>
+
                         <div class="cadastrar-form__aceite-termos">
                             <input type="checkbox" name="termos" id="cadastro-form__termos" class="cadastro-form__input" required>
                             <label for="termos">
