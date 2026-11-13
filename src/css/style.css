@@ -43,7 +43,7 @@
 }
 
 .cadastro-conteudo__titulo span{
-    color: var(--cor-con    traste);
+    color: var(--cor-contraste);
 }
 
 .cadastro-conteudo__subtitulo{
@@ -146,3 +146,51 @@
     margin: 5px 0px 25px 0px;
 }
 
+.cadastrar-form__aceite-termos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cadastrar-form__aceite-termos input{
+    display: none;
+}
+
+.cadastro-form__checkmark-termos {
+    width: 22px;
+    height: 20px;
+    border: 1px solid var(--cor-borda-input);
+    background-color: var(--cor-fundo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+}
+
+.cadastrar-form__aceite-termos input:checked + .cadastro-form__checkmark-termos {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+
+.cadastrar-form__aceite-termos input:checked + .cadastro-form__checkmark-termos::after {
+    content: "✓";
+    color: white;
+    font-size: 14px;
+}
+
+.cadastrar-form__aceite-termos span{
+    font-family: var(--normal);
+    font-size: 0.8rem;
+    color: var(--cor-texto);
+    font-weight: 500;
+}
+
+.cadastrar-form__aceite-termos span a{
+    font-family: var(--normal);
+    font-size: 0.8rem;
+    color: var(--cor-contraste);
+    font-weight: 500;
+}
