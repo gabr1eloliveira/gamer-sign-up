@@ -58,7 +58,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 20px;
 }
 
 .operador__id{
@@ -193,4 +192,8 @@
     font-size: 0.8rem;
     color: var(--cor-contraste);
     font-weight: 500;
+}
+
+.btn-inicializar-conta{
+    padding: 15px;
 }
