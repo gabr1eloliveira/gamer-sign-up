@@ -17,6 +17,8 @@
     --cor-hover: hsl(77 67% 39%);
     --cor-borda: hsl(211 22% 24%);
     --cor-borda-input: hsl(211 14% 50%);
+    --cor-focus: hsl(204 60% 97%);
+    --cor-hover: hsl(208 49% 92%);
     --cor-texto-contraste: hsl(210, 35%, 22%);
 }
 
