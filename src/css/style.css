@@ -255,6 +255,31 @@
     margin-top: 7px;
 }
 
+.cadastro-form__senha-description{
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+}
+
+.cadastro-form__senha-forca-status{
+    font-family: var(--normal);
+    font-size: 1rem;
+    color: var(--cor-texto);
+    margin-top: 3px;
+}
+
+.cadastro-form__senha-forca-status.fraco{
+    color: red;
+}
+
+.cadastro-form__senha-forca-status.medio{
+    color: yellow;
+}
+
+.cadastro-form__senha-forca-status.forte{
+    color: green;
+}
+
 .forca-senha__nivel{
     width: 100%;
     height: 3px;
@@ -266,15 +291,18 @@
 .forca-senha__nivel.fraco{
     background-color: red;
     width: 33.33%;
+    color: red;
 }
 
 .forca-senha__nivel.medio{
     background-color: yellow;
     width: 66.66%;
+    color: yellow;
 }
 
 .forca-senha__nivel.forte{
     background-color: green;
     width: 100%;
+    color: green;
 }
 
