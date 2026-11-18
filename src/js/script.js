@@ -32,3 +32,5 @@ senha.addEventListener("input", function() {
         texto.textContent = "FORTE"
     };
 });
+
+

@@ -141,10 +141,15 @@
     background-color: var(--cor-fundo);
     border: 1px solid var(--cor-borda-input);
     outline: none;
+    color: var(--cor-texto);
+}
+
+.cadastro-form__input:hover{
+    border: 1px solid var(--cor-hover);
 }
 
 .cadastro-form__input:focus{
-    border: 1px solid var(--cor-focus);
+    border: 2px solid var(--cor-contraste);
 }
 
 .cadastro-form__input::placeholder{
@@ -181,6 +186,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     transition: .2s;
 }
 
@@ -226,6 +232,7 @@
     font-size: 0.9rem;
     border: none;
     margin: 10px 0px 10px 0px;
+    cursor: pointer;
 }
 
 .btn-inicializar-conta:hover{
@@ -251,7 +258,7 @@
 }
 
 /*-----------------------*/
-/*   SENHA VER/NÃO VER   */
+/*         SENHA         */
 /*-----------------------*/
 
 .cadastro-form__campo-senha{
