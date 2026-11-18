@@ -160,9 +160,13 @@
 
 .cadastro-form__description{
     font-family: var(--normal);
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     color: var(--cor-texto);
     margin: 5px 0px 5px 0px;
+}
+
+.cadastro-form__senha-description{
+    display: flex;
 }
 
 .cadastrar-form__aceite-termos{
