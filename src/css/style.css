@@ -148,10 +148,6 @@
     border: 1px solid var(--cor-hover);
 }
 
-.cadastro-form_input.error{
-    border: 2px solid var(--erro);
-}
-
 .cadastro-form__input:focus{
     border: 2px solid var(--cor-contraste);
 }
@@ -161,6 +157,21 @@
     font-family: var(--normal);
     font-size: 0.8rem;
 }
+
+/*INPUT USERNAME*/
+
+#cadastro-form__username.error{
+    border: 2px solid var(--erro);
+}
+
+.cadastro-form__icone-error.error{
+    display: flex;
+    width: 5%;
+}
+
+/*IMPUT EMAIL*/
+
+
 
 .cadastro-form__description{
     font-family: var(--normal);
@@ -299,8 +310,7 @@
 }
 
 .cadastro-form__icone-error{
-    display: flex;
-    width: 5%;
+    display: none;
 }
 
 .error-input{
@@ -311,9 +321,7 @@
     margin-top: 5px;
 }
 
-.error-input .cadastro-form__description{
-    color: var(--erro);
-}
+
 
 .cadastro-form__senha-forca-status{
     font-family: var(--normal);

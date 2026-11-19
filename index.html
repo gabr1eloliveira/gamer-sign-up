@@ -39,7 +39,10 @@
 
                         <label for="username"><span>></span> USERNAME</label>
                         <input type="text" name="username" id="cadastro-form__username" class="cadastro-form__input" required minlength="3" maxlength="20" placeholder="e.g. Vortex_07">
-                        <p class="cadastro-form__description">3-20 caracteres: letras, números, _ ou -</p> <!--APARECE NO MESMO LUGAR (Use pelo menos 3 caracteres)-->
+                        <div class="error-input">
+                            <img src="assets/images/icon-alert.svg" alt="Icone de Erro" class="cadastro-form__icone-error">
+                            <p class="cadastro-form__description">3-20 caracteres: letras, números, _ ou -</p> <!--APARECE DEPOIS-->
+                        </div>
 
                         <label for="email"><span>></span> EMAIL</label>
                         <input type="email" name="email" id="cadastro-form__email" class="cadastro-form__input" required maxlength="100" autocomplete="email" placeholder="you@example.com">
