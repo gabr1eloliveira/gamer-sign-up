@@ -39,10 +39,17 @@
 
                         <label for="username"><span>></span> USERNAME</label>
                         <input type="text" name="username" id="cadastro-form__username" class="cadastro-form__input" required minlength="3" maxlength="20" placeholder="e.g. Vortex_07">
-                        <p class="cadastro-form__description">3-20 caracteres: letras, números, _ ou -</p>
+                        <div class="error-input">
+                            <img src="assets/images/icon-alert.svg" alt="Icone de Erro" class="cadastro-form__icone-error">
+                            <p class="cadastro-form__description">3-20 caracteres: letras, números, _ ou -</p> <!--APARECE DEPOIS-->
+                        </div>
 
                         <label for="email"><span>></span> EMAIL</label>
                         <input type="email" name="email" id="cadastro-form__email" class="cadastro-form__input" required maxlength="100" autocomplete="email" placeholder="you@example.com">
+                        <div class="error-input">
+                            <img src="assets/images/icon-alert.svg" alt="Icone de Erro" class="cadastro-form__icone-error">
+                            <p class="cadastro-form__description">Entre com um email válido, como you@example.com</p> <!--APARECE DEPOIS-->
+                        </div>
 
                         <label for="senha"><span>></span> SENHA</label>
                         <div class="cadastro-form__campo-senha">                            
@@ -54,10 +61,11 @@
                                 <span class="forca-senha__nivel"></span>
                             </div>  
                             <div class="cadastro-form__senha-description">
-                                <img src="assets/images/icon-alert.svg" alt="Icone de Erro  ">
-                                <p class="cadastro-form__description">Pelo menos 8 caracterers</p>
-                                <p class="cadastro-form__senha-forca-status"></p>
-                                
+                                <div class="error-input">
+                                    <img src="assets/images/icon-alert.svg" alt="Icone de Erro" class="cadastro-form__icone-error">
+                                    <p class="cadastro-form__description">Pelo menos 8 caracterers</p> <!--MUDA DE COR DEPOIS-->
+                                </div>
+                                <p class="cadastro-form__senha-forca-status"></p>                               
                             </div>                        
                         </div>
                         
@@ -69,6 +77,10 @@
                             <button class="btn-mostrar-senha">
                                 <img src="assets/images/icon-eye.svg" alt="Mostrar Senha">
                             </button>
+                                <div class="error-input">
+                                    <img src="assets/images/icon-alert.svg" alt="Icone de Erro" class="cadastro-form__icone-error">
+                                    <p class="cadastro-form__description">As senhas não coincidem</p> <!--APARECE DEPOIS-->
+                                </div>                               
                         </div>
 
                         <label class="cadastrar-form__aceite-termos">
@@ -78,6 +90,10 @@
                                 Aceito os <a href="#" target="_blank">Termos</a> e a <a href="#" target="_blank">Política de Privacidade.</a>
                             </span>
                         </label>
+                        <div class="error-input">
+                                    <img src="assets/images/icon-alert.svg" alt="Icone de Erro" class="cadastro-form__icone-error">
+                                    <p class="cadastro-form__description">Aceite os termos para continuar</p> <!--APARECE DEPOIS-->
+                                </div>
                         <button class="btn-inicializar-conta">INICIALIZAR CONTA</button>
                         <p class="cadastrar-form__already-login">Já e um operador? <a href="#" target="_blank">Log in</a></p>
                     </form>
