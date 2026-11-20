@@ -8,3 +8,11 @@ body{
     background: var(--cor-borda);
     margin: 20px 0px 20px 0px;
 }
+
+.error-input{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    margin-top: 5px;
+}

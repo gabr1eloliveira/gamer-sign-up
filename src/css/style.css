@@ -186,6 +186,15 @@
 /*INPUT SENHA ERROR*/
 /*-----------------*/
 
+#cadastro-form__senha.erro{
+    border: 2px solid var(--erro);
+}
+
+#cadastro-form__icone-error-senha.erro{
+    display: flex;
+    width: 5%;
+}
+
 .cadastro-form__description{
     font-family: var(--normal);
     font-size: 0.8rem;
@@ -289,10 +298,6 @@
     color: var(--cor-hover);
 }
 
-/*-----------------------*/
-/*         SENHA         */
-/*-----------------------*/
-
 .cadastro-form__campo-senha{
     display: flex;
     flex-direction: column;
@@ -325,16 +330,6 @@
 .cadastro-form__icone-error{
     display: none;
 }
-
-.error-input{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 4px;
-    margin-top: 5px;
-}
-
-
 
 .cadastro-form__senha-forca-status{
     font-family: var(--normal);

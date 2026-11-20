@@ -53,3 +53,26 @@ function validarEmail(email){
 
     return regexEmail.test(email)
 }
+
+
+//---------------------------
+//          SENHA-ERROR
+//---------------------------
+
+const senha = document.querySelector("#cadastro-form__senha");
+const erroTextSenha = document.querySelector("#cadastro-form__description-senha");
+const iconErroSenha = document.querySelector("#cadastro-form__icone-error-senha");
+
+senha.addEventListener("input", function(){
+    const senhaValor = senha.value
+    const senhaInvalida = senhaValor.length < 8
+
+    iconErroSenha.classList.toggle("erro", senhaInvalida)
+    senha.classList.toggle("erro", senhaInvalida)
+
+    if(senhaInvalida){
+        erroTextSenha.style.color = "var(--erro)"
+    }else{
+        erroTextSenha.style.color = "var(--cor-texto)"
+    }
+})
