@@ -158,7 +158,9 @@
     font-size: 0.8rem;
 }
 
+/*--------------------*/
 /*INPUT USERNAME ERROR*/
+/*--------------------*/
 
 #cadastro-form__username.error{
     border: 2px solid var(--erro);
@@ -169,7 +171,7 @@
     width: 5%;
 }
 
-/*IMPUT EMAIL ERROR*/
+/*INPUT EMAIL ERROR*/
 
 #cadastro-form__email.erro{
     border: 2px solid var(--erro);
@@ -179,6 +181,10 @@
     display: flex;
     width: 5%;
 }
+
+/*-----------------*/
+/*INPUT SENHA ERROR*/
+/*-----------------*/
 
 .cadastro-form__description{
     font-family: var(--normal);
