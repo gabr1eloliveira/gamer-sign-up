@@ -158,43 +158,6 @@
     font-size: 0.8rem;
 }
 
-/*--------------------*/
-/*INPUT USERNAME ERROR*/
-/*--------------------*/
-
-#cadastro-form__username.error{
-    border: 2px solid var(--erro);
-}
-
-#cadastro-form__icone-error-username.error{
-    display: flex;
-    width: 5%;
-}
-
-/*INPUT EMAIL ERROR*/
-
-#cadastro-form__email.erro{
-    border: 2px solid var(--erro);
-}
-
-#cadastro-form__icone-error-email.erro{
-    display: flex;
-    width: 5%;
-}
-
-/*-----------------*/
-/*INPUT SENHA ERROR*/
-/*-----------------*/
-
-#cadastro-form__senha.erro{
-    border: 2px solid var(--erro);
-}
-
-#cadastro-form__icone-error-senha.erro{
-    display: flex;
-    width: 5%;
-}
-
 .cadastro-form__description{
     font-family: var(--normal);
     font-size: 0.8rem;
@@ -205,6 +168,10 @@
 .cadastro-form__senha-description{
     display: flex;
 }
+
+/*--------------------*/
+/*  ACEITAR TERMOR    */
+/*--------------------*/
 
 .cadastrar-form__aceite-termos{
     display: flex;
@@ -264,6 +231,10 @@
     color: var(--cor-hover);
 }
 
+/*--------------------*/
+/*  BOTÃO INICIALIZAR */
+/*--------------------*/
+
 .btn-inicializar-conta{
     padding: 11px 0px;
     background-color: var(--cor-contraste);
@@ -279,6 +250,10 @@
 .btn-inicializar-conta:hover{
     background-color: var(--cor-hover);
 }
+
+/*--------------------*/
+/*    FAÇA LOGIN      */
+/*--------------------*/
 
 .cadastrar-form__already-login{
     color: var(--cor-texto);
@@ -298,6 +273,10 @@
     color: var(--cor-hover);
 }
 
+/*--------------------*/
+/*       SENHA        */
+/*--------------------*/
+
 .cadastro-form__campo-senha{
     display: flex;
     flex-direction: column;
@@ -314,12 +293,7 @@
     cursor: pointer;
 }
 
-.cadastro-form__forca-senha{
-    display: flex;
-    flex-direction: row;
-    gap: 2px;
-    margin-top: 7px;
-}
+
 
 .cadastro-form__senha-description{
     display: flex;
@@ -338,11 +312,73 @@
     margin-top: 3px;
 }
 
+/*--------------------*/
+/*   FORÇA SENHA      */
+/*--------------------*/
+
+.cadastro-form__forca-senha{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    margin-top: 7px;
+}
+
 .forca-senha__nivel{
     width: 100%;
-    height: 3px;
+    height: 4px;
     background-color: var(--cor-borda);
     border-radius: 5px 0px 5px 0px;
     transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
+.forca-senha__nivel.fraco{
+    width: 25%;
+    background-color: var(--erro);
+}
+
+.forca-senha__nivel.medio{
+    width: 50%;
+    background-color: var(--fair);
+}
+
+.forca-senha__nivel.forte{
+    width: 100%;
+    background-color: var(--sucess);
+}
+
+/*--------------------*/
+/*INPUT USERNAME ERROR*/
+/*--------------------*/
+
+#cadastro-form__username.error{
+    border: 2px solid var(--erro);
+}
+
+#cadastro-form__icone-error-username.error{
+    display: flex;
+    width: 5%;
+}
+
+/*INPUT EMAIL ERROR*/
+
+#cadastro-form__email.erro{
+    border: 2px solid var(--erro);
+}
+
+#cadastro-form__icone-error-email.erro{
+    display: flex;
+    width: 5%;
+}
+
+/*-----------------*/
+/*INPUT SENHA ERROR*/
+/*-----------------*/
+
+#cadastro-form__senha.erro{
+    border: 2px solid var(--erro);
+}
+
+#cadastro-form__icone-error-senha.erro{
+    display: flex;
+    width: 5%;
+}

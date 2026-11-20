@@ -62,6 +62,7 @@ function validarEmail(email){
 const senha = document.querySelector("#cadastro-form__senha");
 const erroTextSenha = document.querySelector("#cadastro-form__description-senha");
 const iconErroSenha = document.querySelector("#cadastro-form__icone-error-senha");
+const forcaSenha = document.querySelector(".forca-senha__nivel");
 
 senha.addEventListener("input", function(){
     const senhaValor = senha.value
@@ -75,8 +76,23 @@ senha.addEventListener("input", function(){
     }else{
         erroTextSenha.style.color = "var(--cor-texto)"
     }
-})
 
-//---------------------------
-//          FORÇA SENHA
-//---------------------------
+    //FORÇA SENHA
+
+    let ponto = 0
+    if(senhaValor.length >= 8) ponto++;
+    if(/[a-z]/.test(senhaValor) && /[A-Z]/.test(senhaValor))ponto++;
+    if(/[0-9]/.test(senhaValor))ponto++;
+    if(/[^a-zA-Z0-9]/.test(senhaValor))ponto++
+
+    forcaSenha.classList.remove("fraco", "medio", "forte")
+
+    if(ponto <= 1){
+        forcaSenha.classList.add("fraco")
+        
+    }else if (ponto <= 2){
+        forcaSenha.classList.add("medio")
+    }else if (ponto >= 3){
+        forcaSenha.classList.add("forte")
+    }
+})
