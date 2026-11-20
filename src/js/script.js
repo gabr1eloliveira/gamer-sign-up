@@ -76,3 +76,7 @@ senha.addEventListener("input", function(){
         erroTextSenha.style.color = "var(--cor-texto)"
     }
 })
+
+//---------------------------
+//          FORÇA SENHA
+//---------------------------
